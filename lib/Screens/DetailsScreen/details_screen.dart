@@ -155,15 +155,15 @@ class DetailsScreen extends StatelessWidget {
                         ),
                       ),
                       Pinned.fromPins(
-                        Pin(size: 107.6, start: 13.2),
-                        Pin(size: 169.5, end: 55.0),
+                        Pin(size: 107.6, start: 1),
+                        Pin(size: 229.5, end: 25.0),
                         child: BlendMask(
                           blendMode: BlendMode.darken,
                           child: Container(
                             decoration: const BoxDecoration(
                               image: DecorationImage(
                                 image: AssetImage('assets/vin6.png'),
-                                fit: BoxFit.fill,
+                                fit: BoxFit.cover,
                               ),
                             ),
                           ),

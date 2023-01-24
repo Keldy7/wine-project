@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:wineproject/Screens/PurchaseScreen/purchase_screen.dart';
 
-
 class CreditCardForm extends StatefulWidget {
   const CreditCardForm({super.key});
 
@@ -78,7 +77,7 @@ class _CreditCardFormState extends State<CreditCardForm> {
                               borderSide: const BorderSide(
                                   color: Colors.white, width: 1),
                               borderRadius: BorderRadius.circular(10)),
-                          fillColor: Color.fromARGB(255, 241, 241, 241),
+                          fillColor: const Color.fromARGB(255, 241, 241, 241),
                           filled: true,
                           hintText: "4546 0687 2940 0547",
                           border: OutlineInputBorder(
@@ -87,86 +86,89 @@ class _CreditCardFormState extends State<CreditCardForm> {
                         ),
                       ),
                     ],
-                  )
-                ),
+                  )),
+
               Padding(
-                  padding: const EdgeInsets.only(
-                      left: 25.0, right: 25.0, top: 10, bottom: 10),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        "Expiry",
-                        style: GoogleFonts.poppins(
-                          color: Colors.grey.shade400,
-                          fontWeight: FontWeight.w600,
-                        ),
-                      ),
-                      TextField(
-                        style: GoogleFonts.poppins(
-                          color: Colors.grey.shade700,
-                          fontWeight: FontWeight.w600,
-                        ),
-                        controller: _dateExpiryController,
-                        decoration: InputDecoration(
-                          enabledBorder: OutlineInputBorder(
-                              borderSide: const BorderSide(
-                                  color: Colors.white, width: 1),
-                              borderRadius: BorderRadius.circular(10)),
-                          focusedBorder: OutlineInputBorder(
-                              borderSide: const BorderSide(
-                                  color: Colors.white, width: 1),
-                              borderRadius: BorderRadius.circular(10)),
-                          fillColor: Color.fromARGB(255, 241, 241, 241),
-                          filled: true,
-                          hintText: "09/24",
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
+                padding: const EdgeInsets.only(
+                    left: 25, right: 25, top: 10, bottom: 10),
+                child: Row(
+                  children: [
+                    Expanded(
+                        child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Expiry",
+                          style: GoogleFonts.poppins(
+                            color: Colors.grey.shade400,
+                            fontWeight: FontWeight.w600,
                           ),
                         ),
-                      ),
-                    ],
-                  )
-                ),
-              Padding(
-                  padding: const EdgeInsets.only(
-                      left: 25.0, right: 25.0, top: 10, bottom: 10),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        "CVV",
-                        style: GoogleFonts.poppins(
-                          color: Colors.grey.shade400,
-                          fontWeight: FontWeight.w600,
-                        ),
-                      ),
-                      TextField(
-                        style: GoogleFonts.poppins(
-                          color: Colors.grey.shade700,
-                          fontWeight: FontWeight.w600,
-                        ),
-                        controller: _cvvController,
-                        decoration: InputDecoration(
-                          enabledBorder: OutlineInputBorder(
-                              borderSide: const BorderSide(
-                                  color: Colors.white, width: 1),
-                              borderRadius: BorderRadius.circular(10)),
-                          focusedBorder: OutlineInputBorder(
-                              borderSide: const BorderSide(
-                                  color: Colors.white, width: 1),
-                              borderRadius: BorderRadius.circular(10)),
-                          fillColor: Color.fromARGB(255, 241, 241, 241),
-                          filled: true,
-                          hintText: "***",
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
+                        TextField(
+                          style: GoogleFonts.poppins(
+                            color: Colors.grey.shade700,
+                            fontWeight: FontWeight.w600,
+                          ),
+                          controller: _dateExpiryController,
+                          decoration: InputDecoration(
+                            enabledBorder: OutlineInputBorder(
+                                borderSide: const BorderSide(
+                                    color: Colors.white, width: 1),
+                                borderRadius: BorderRadius.circular(10)),
+                            focusedBorder: OutlineInputBorder(
+                                borderSide: const BorderSide(
+                                    color: Colors.white, width: 1),
+                                borderRadius: BorderRadius.circular(10)),
+                            fillColor: const Color.fromARGB(255, 241, 241, 241),
+                            filled: true,
+                            hintText: "09/24",
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(10),
+                            ),
                           ),
                         ),
-                      ),
-                    ],
-                  )
+                      ],
+                    )),
+                    SizedBox(width: 30),
+                    Expanded(
+                        child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "CVV",
+                          style: GoogleFonts.poppins(
+                            color: Colors.grey.shade400,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                        TextField(
+                          style: GoogleFonts.poppins(
+                            color: Colors.grey.shade700,
+                            fontWeight: FontWeight.w600,
+                          ),
+                          controller: _cvvController,
+                          decoration: InputDecoration(
+                            enabledBorder: OutlineInputBorder(
+                                borderSide: const BorderSide(
+                                    color: Colors.white, width: 1),
+                                borderRadius: BorderRadius.circular(10)),
+                            focusedBorder: OutlineInputBorder(
+                                borderSide: const BorderSide(
+                                    color: Colors.white, width: 1),
+                                borderRadius: BorderRadius.circular(10)),
+                            fillColor: const Color.fromARGB(255, 241, 241, 241),
+                            filled: true,
+                            hintText: "***",
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                          ),
+                        ),
+                      ],
+                    )),
+                  ],
                 ),
+              ),
               Padding(
                   padding: const EdgeInsets.only(
                       left: 25.0, right: 25.0, top: 10, bottom: 10),
@@ -196,7 +198,7 @@ class _CreditCardFormState extends State<CreditCardForm> {
                               borderSide: const BorderSide(
                                   color: Colors.white, width: 1),
                               borderRadius: BorderRadius.circular(10)),
-                          fillColor: Color.fromARGB(255, 241, 241, 241),
+                          fillColor: const Color.fromARGB(255, 241, 241, 241),
                           filled: true,
                           hintText: "United States",
                           border: OutlineInputBorder(
@@ -205,9 +207,8 @@ class _CreditCardFormState extends State<CreditCardForm> {
                         ),
                       ),
                     ],
-                  )
-                ),
-                Padding(
+                  )),
+              Padding(
                   padding: const EdgeInsets.only(
                       left: 25.0, right: 25.0, top: 10, bottom: 10),
                   child: Column(
@@ -236,7 +237,7 @@ class _CreditCardFormState extends State<CreditCardForm> {
                               borderSide: const BorderSide(
                                   color: Colors.white, width: 1),
                               borderRadius: BorderRadius.circular(10)),
-                          fillColor: Color.fromARGB(255, 241, 241, 241),
+                          fillColor: const Color.fromARGB(255, 241, 241, 241),
                           filled: true,
                           hintText: "9",
                           border: OutlineInputBorder(
@@ -245,11 +246,8 @@ class _CreditCardFormState extends State<CreditCardForm> {
                         ),
                       ),
                     ],
-                  )
-                ),
+                  )),
 
-            
-              
               const SizedBox(height: 5),
               //Checkbox
               Padding(
@@ -260,9 +258,10 @@ class _CreditCardFormState extends State<CreditCardForm> {
                     Container(
                       child: ElevatedButton(
                         onPressed: () {
-                          //Navigator.pushNamed(context, '/register');
-                          Navigator.push(context,
-                              MaterialPageRoute(builder: (_) => const PurchaseScreen()));
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (_) => const PurchaseScreen()));
                         },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: const Color(0xff4e131f),

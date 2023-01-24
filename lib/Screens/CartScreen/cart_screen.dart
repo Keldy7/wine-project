@@ -5,7 +5,6 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:wineproject/Screens/MapScreen/map_screen.dart';
 
-
 class CartScreen extends StatelessWidget {
   const CartScreen({
     Key? key,
@@ -18,18 +17,17 @@ class CartScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.white,
         title: const Text("Cart",
-        style: TextStyle(
-          color: Colors.black, 
-          fontSize: 35)),
+            style: TextStyle(color: Colors.black, fontSize: 35)),
         elevation: 0.0,
         toolbarHeight: 35,
         leading: Builder(
           builder: (BuildContext context) {
             return IconButton(
               icon: const Icon(Icons.arrow_back_outlined,
-              color: Colors.black,
-              size: 30),
-              onPressed: () { Navigator.pop(context);},
+                  color: Colors.black, size: 30),
+              onPressed: () {
+                Navigator.pop(context);
+              },
             );
           },
         ),
@@ -71,7 +69,7 @@ class CartScreen extends StatelessWidget {
                   ),
                   Center(
                     child: SizedBox(
-                      width: 185.0,
+                      width: 180,
                       height: 24.0,
                       child: Text(
                         'Proceed to Checkout',
@@ -86,26 +84,6 @@ class CartScreen extends StatelessWidget {
                   ),
                 ],
               ),
-            ),
-          ),
-
-          
-          Pinned.fromPins(
-            Pin(size: 25.0, middle: 0.3136),
-            Pin(size: 26.0, start: 82.0),
-            child: Stack(
-              children: <Widget>[
-                Container(
-                  decoration: BoxDecoration(
-                    color: const Color(0xff3f2828),
-                    borderRadius:
-                        const BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                    border:
-                        Border.all(width: 1.0, color: const Color(0xff707070)),
-                  ),
-                  margin: const EdgeInsets.fromLTRB(0.0, 1.0, 0.0, 0.0),
-                ),
-              ],
             ),
           ),
           Pinned.fromPins(
@@ -126,32 +104,6 @@ class CartScreen extends StatelessWidget {
                             child: Stack(
                               children: <Widget>[
                                 Transform.translate(
-                                  offset: const Offset(140.0, 7.0),
-                                  child: SizedBox(
-                                    width: 30.0,
-                                    height: 24.0,
-                                    child: Stack(
-                                      children: <Widget>[
-                                        Container(
-                                          width: 30.0,
-                                          height: 24.0,
-                                          decoration: const BoxDecoration(
-                                            color: Color(0xfffff3f3),
-                                            borderRadius: BorderRadius.all(
-                                                Radius.elliptical(
-                                                    9999.0, 9999.0)),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                                Container(
-                                  width: 429.0,
-                                  height: 127.0,
-                                  color: Colors.white,
-                                ),
-                                Transform.translate(
                                   offset: const Offset(21.0, 15.7),
                                   child: SizedBox(
                                     width: 142.0,
@@ -164,18 +116,16 @@ class CartScreen extends StatelessWidget {
                                 ),
                                 Transform.translate(
                                   offset: const Offset(72.0, 23.0),
-                                  child:
-                                    Container(
-                                      width: 28.0,
-                                      height: 75.0,
-                                      decoration: const BoxDecoration(
-                                        image: DecorationImage(
-                                          image: AssetImage(
-                                              'assets/vin.jpg'),
-                                          fit: BoxFit.fill,
-                                        ),
+                                  child: Container(
+                                    width: 28.0,
+                                    height: 75.0,
+                                    decoration: const BoxDecoration(
+                                      image: DecorationImage(
+                                        image: AssetImage('assets/vin.jpg'),
+                                        fit: BoxFit.fill,
                                       ),
                                     ),
+                                  ),
                                 ),
                                 Transform.translate(
                                   offset: const Offset(179.0, 66.0),
@@ -245,7 +195,7 @@ class CartScreen extends StatelessWidget {
                             ),
                           ),
                           Transform.translate(
-                            offset: const Offset(302.0, 70.0),
+                            offset: const Offset(300.6, 70.0),
                             child: const Text(
                               '2',
                               style: TextStyle(
@@ -312,32 +262,6 @@ class CartScreen extends StatelessWidget {
                             child: Stack(
                               children: <Widget>[
                                 Transform.translate(
-                                  offset: const Offset(140.0, 7.0),
-                                  child: SizedBox(
-                                    width: 30.0,
-                                    height: 24.0,
-                                    child: Stack(
-                                      children: <Widget>[
-                                        Container(
-                                          width: 30.0,
-                                          height: 24.0,
-                                          decoration: const BoxDecoration(
-                                            color: Color(0xfffff3f3),
-                                            borderRadius: BorderRadius.all(
-                                                Radius.elliptical(
-                                                    9999.0, 9999.0)),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                                Container(
-                                  width: 429.0,
-                                  height: 127.0,
-                                  color: Colors.white,
-                                ),
-                                Transform.translate(
                                   offset: const Offset(21.0, 15.7),
                                   child: SizedBox(
                                     width: 142.0,
@@ -358,15 +282,12 @@ class CartScreen extends StatelessWidget {
                                 ),
                                 Transform.translate(
                                   offset: const Offset(42.0, 23.0),
-                                  child:
-                                      // Adobe XD layer: 'vin' (shape)
-                                      Container(
+                                  child: Container(
                                     width: 85.0,
                                     height: 74.0,
                                     decoration: const BoxDecoration(
                                       image: DecorationImage(
-                                        image: AssetImage(
-                                            'assets/vin5.png'),
+                                        image: AssetImage('assets/vin5.png'),
                                         fit: BoxFit.fill,
                                       ),
                                     ),
@@ -507,32 +428,6 @@ class CartScreen extends StatelessWidget {
                             child: Stack(
                               children: <Widget>[
                                 Transform.translate(
-                                  offset: const Offset(140.0, 7.0),
-                                  child: SizedBox(
-                                    width: 30.0,
-                                    height: 24.0,
-                                    child: Stack(
-                                      children: <Widget>[
-                                        Container(
-                                          width: 30.0,
-                                          height: 24.0,
-                                          decoration: const BoxDecoration(
-                                            color: Color(0xfffff3f3),
-                                            borderRadius: BorderRadius.all(
-                                                Radius.elliptical(
-                                                    9999.0, 9999.0)),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                                Container(
-                                  width: 429.0,
-                                  height: 127.0,
-                                  color: Colors.white,
-                                ),
-                                Transform.translate(
                                   offset: const Offset(21.0, 15.7),
                                   child: SizedBox(
                                     width: 142.0,
@@ -553,15 +448,12 @@ class CartScreen extends StatelessWidget {
                                 ),
                                 Transform.translate(
                                   offset: const Offset(62.0, 23.0),
-                                  child:
-                                      // Adobe XD layer: 'vin' (shape)
-                                      Container(
+                                  child: Container(
                                     width: 58.0,
                                     height: 70.0,
                                     decoration: const BoxDecoration(
                                       image: DecorationImage(
-                                        image: AssetImage(
-                                            'assets/vin3.png'),
+                                        image: AssetImage('assets/vin3.png'),
                                         fit: BoxFit.fill,
                                       ),
                                     ),
@@ -628,7 +520,7 @@ class CartScreen extends StatelessWidget {
                               width: 30.0,
                               height: 30.0,
                               decoration: const BoxDecoration(
-                                color: Color(0xfffff3f3),
+                                color: Color(0xffffe2e2),
                                 borderRadius: BorderRadius.all(
                                     Radius.elliptical(9999.0, 9999.0)),
                               ),
@@ -696,26 +588,6 @@ class CartScreen extends StatelessWidget {
                       Pin(size: 127.0, end: 0.0),
                       child: Stack(
                         children: <Widget>[
-                          Transform.translate(
-                            offset: const Offset(140.0, 7.0),
-                            child: SizedBox(
-                              width: 30.0,
-                              height: 24.0,
-                              child: Stack(
-                                children: <Widget>[
-                                  Container(
-                                    width: 30.0,
-                                    height: 24.0,
-                                    decoration: const BoxDecoration(
-                                      color: Color(0xfffff3f3),
-                                      borderRadius: BorderRadius.all(
-                                          Radius.elliptical(9999.0, 9999.0)),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
                           Container(
                             width: 429.0,
                             height: 127.0,
@@ -742,18 +614,16 @@ class CartScreen extends StatelessWidget {
                           ),
                           Transform.translate(
                             offset: const Offset(62.0, 23.0),
-                            child:
-                              Container(
-                                width: 58.0,
-                                height: 70.0,
-                                decoration: const BoxDecoration(
-                                  image: DecorationImage(
-                                    image:
-                                        AssetImage('assets/vin4.png'),
-                                    fit: BoxFit.fill,
-                                  ),
+                            child: Container(
+                              width: 58.0,
+                              height: 70.0,
+                              decoration: const BoxDecoration(
+                                image: DecorationImage(
+                                  image: AssetImage('assets/vin4.png'),
+                                  fit: BoxFit.fill,
                                 ),
                               ),
+                            ),
                           ),
                           Transform.translate(
                             offset: const Offset(179.0, 66.0),
@@ -813,7 +683,7 @@ class CartScreen extends StatelessWidget {
                               width: 30.0,
                               height: 30.0,
                               decoration: const BoxDecoration(
-                                color: Color(0xfffff3f3),
+                                color: Color(0xffffe2e2),
                                 borderRadius: BorderRadius.all(
                                     Radius.elliptical(9999.0, 9999.0)),
                               ),
