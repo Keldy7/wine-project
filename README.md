@@ -38,11 +38,3 @@ Front-end design inspired by the Dribbble account of [hey@migulko•cz](https://
 https://user-images.githubusercontent.com/93558050/214191242-cbbc8e03-8113-46c6-8640-2a3898ad8d88.mp4
 
 
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
->>>>>>> design
